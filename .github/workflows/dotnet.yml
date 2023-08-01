@@ -26,6 +26,10 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: powershell test
+      shell: pwsh
+      run: |
+        echo "powershell"
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
