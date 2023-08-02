@@ -25,7 +25,7 @@ jobs:
     - name: Build
       run: |
         dotnet build --no-restore
-        zip --junk-paths my-artifact README.md
+        zip --junk-paths my-artifact Readme.md
         
     - name: Test
       run: dotnet test --no-build --verbosity normal
