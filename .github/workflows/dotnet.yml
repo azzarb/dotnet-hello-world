@@ -58,7 +58,7 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: ${{ steps.create_release.outputs.upload_url }}
-        path: ./myartifact.zip
+        path: ./my-artifact.zip
        
         
           
